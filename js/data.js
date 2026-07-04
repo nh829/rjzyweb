@@ -48,7 +48,7 @@ var catIcons = {
 var softwareData = [
   // ---- Adobe ----
   {id:1, name:'Adobe Photoshop 2024', category:'Adobe', icon:'fa-paint-brush',
-   description:'专业图像处理与设计软件',
+   description:'专业图像处理与设计软件，广泛应用于平面设计、摄影修图、UI/UX 设计、数字绘画等领域。2024 版本带来了 AI 智能填充、神经网络滤镜等革命性功能。',
    detailDesc:'Photoshop 是 Adobe 旗下最著名的图像处理软件，广泛应用于平面设计、摄影修图、UI/UX 设计、数字绘画等领域。2024 版本带来了 AI 智能填充、神经网络滤镜等革命性功能。',
    versions:[
      {ver:'2024 v25.9.1', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},

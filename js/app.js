@@ -87,7 +87,7 @@ function renderSection(cat,items){
       h+='<div class="card" data-id="'+s.id+'">';
       h+='<div class="card-body"><div class="card-icon"><i class="fas '+(s.icon||si)+'"></i></div>';
       h+='<div class="card-name">'+esc(s.name)+'</div><div class="card-desc">'+esc(s.description)+'</div></div>';
-      h+='<div class="card-footer"><span class="dl-badge"><i class="fas fa-download"></i> 一键安装</span></div></div>';
+      h+='</div>'; // close card-body then card
     });
   }
   h+='</div></div>';
@@ -122,7 +122,7 @@ function renderSearch(){
       html+='<div class="card" data-id="'+s.id+'" data-idx="'+results.indexOf(s)+'">';
       html+='<div class="card-body"><div class="card-icon"><i class="fas '+(s.icon||si)+'"></i></div>';
       html+='<div class="card-name">'+hl(esc(s.name),kw)+'</div><div class="card-desc">'+hl(esc(s.description),kw)+'</div></div>';
-      html+='<div class="card-footer"><span class="dl-badge"><i class="fas fa-download"></i> 一键安装</span></div></div>';
+      html+='</div>'; // close card-body then card
     });
   }
   html+='</div></div>';
