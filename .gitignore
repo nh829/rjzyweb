@@ -1,0 +1,22 @@
+# 操作系统文件
+Thumbs.db
+*.swp
+*.swo
+.DS_Store
+Desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 日志
+*.log
+
+# 环境
+.env
+.env.local
+
+# 不要忽略数据文件 — 它们是项目核心
+# 所有文件都应提交到 git
