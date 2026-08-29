@@ -1,22 +1,16 @@
-# 操作系统文件
-Thumbs.db
-*.swp
-*.swo
+# 依赖
+node_modules/
+
+# 系统 / 编辑器
 .DS_Store
-Desktop.ini
-
-# 编辑器
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# 日志
+Thumbs.db
+*.tmp
 *.log
 
-# 环境
-.env
-.env.local
+# 项目本地数据（不纳入版本库）
+.workbuddy/
 
-# 不要忽略数据文件 — 它们是项目核心
-# 所有文件都应提交到 git
+# 本地临时脚本
+_inject.py
+_fix.py
+_t.py

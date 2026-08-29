@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>软件资源库</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="description" content="软件资源库 - 设计、工程、开发类软件的收集与下载导航，涵盖 Adobe、CAD、三维动画、办公、工业工程、数据分析、建筑设计、视频后期、电子电路、渲染引擎、图像绘图、编程开发、装机必备等分类。">
+<meta property="og:title" content="软件资源库">
+<meta property="og:description" content="设计 / 工程 / 开发类软件的收集与下载导航，每日收集，免费分享。">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -37,6 +42,11 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
 .nav-item i{width:18px;text-align:center;font-size:.85rem}
 .nav-item .count{margin-left:auto;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.4);font-size:.6rem;padding:0 6px;border-radius:8px;min-width:18px;text-align:center;line-height:16px}
 .nav-item.active .count{background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.7)}
+.nav-fav:hover{color:#f59e0b}
+.nav-fav.active{background:linear-gradient(135deg,#d97706,#b45309)}
+.sidebar-foot{display:flex;align-items:center;gap:10px;padding:12px 14px;border-top:1px solid rgba(255,255,255,0.06);font-size:.74rem;color:rgba(255,255,255,0.5)}
+.theme-toggle{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:none;border-radius:8px;background:rgba(255,255,255,0.08);color:#e2e8f0;cursor:pointer;font-size:.85rem;transition:all .2s}
+.theme-toggle:hover{background:rgba(255,255,255,0.15)}
 .top-header{display:none;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:1000;width:100%}
 .top-header .h-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;position:relative}
 .hamburger{width:36px;height:36px;display:none;align-items:center;justify-content:center;border:none;border-radius:8px;background:#f1f5f9;color:#475569;cursor:pointer;font-size:1rem}
@@ -59,13 +69,16 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
 .category-head .count-badge{margin-left:auto;background:#e2e8f0;color:#64748b;font-size:.65rem;padding:0 8px;border-radius:10px;line-height:20px}
 .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;animation:fadeIn .25s ease-out}
 @keyframes fadeIn{from{opacity:.5;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-.card{background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.04);transition:all .2s;cursor:pointer;overflow:hidden;border:1px solid transparent;display:flex;flex-direction:column}
+.card{background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.04);transition:all .2s;cursor:pointer;overflow:hidden;border:1px solid transparent;display:flex;flex-direction:column;position:relative}
 .card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,0.06);border-color:#dbeafe}
 .card-body{padding:14px;flex:1}
 .card-icon{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#f0f7ff;border-radius:8px;margin-bottom:10px}
 .card-icon i{font-size:1.1rem;color:#2563eb}
 .card-name{font-size:.85rem;font-weight:700;color:#0f172a;margin-bottom:3px;line-height:1.2}
 .card-desc{font-size:.7rem;color:#94a3b8;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-fav{position:absolute;top:8px;right:8px;width:26px;height:26px;border:none;background:rgba(241,245,249,0.85);color:#94a3b8;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.72rem;transition:all .15s;z-index:2}
+.card-fav:hover{background:#e2e8f0;color:#f59e0b}
+.card-fav.on{background:#fef3c7;color:#f59e0b}
 .search-bar-info{display:none;margin-bottom:12px;padding:6px 12px;background:#dbeafe;border-radius:6px;font-size:.75rem;color:#2563eb;align-items:center;gap:8px}
 .search-bar-info.show{display:flex}
 .search-bar-info .hints{margin-left:auto;display:flex;gap:4px;align-items:center}
@@ -85,6 +98,9 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
 .modal-head-icon i{font-size:1.2rem;color:#2563eb}
 .modal-head-text h3{font-size:.95rem;font-weight:700;color:#0f172a}
 .modal-head-text p{font-size:.72rem;color:#94a3b8}
+.modal-fav{margin-left:auto;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:none;border-radius:50%;background:transparent;color:#94a3b8;cursor:pointer;font-size:.95rem;transition:all .15s}
+.modal-fav:hover{background:#e2e8f0;color:#f59e0b}
+.modal-fav.on{color:#f59e0b}
 .modal-close{margin-left:auto;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:none;border-radius:50%;background:transparent;color:#94a3b8;cursor:pointer;font-size:.9rem;transition:all .15s}
 .modal-close:hover{background:#e2e8f0;color:#475569}
 .modal-body{padding:18px;overflow-y:auto;max-height:calc(85vh - 66px)}
@@ -99,8 +115,10 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
 .v-dl{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:14px;font-size:.68rem;font-weight:600;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;cursor:pointer;border:none;transition:all .15s;text-decoration:none}
 .v-dl:hover{transform:translateY(-1px);box-shadow:0 2px 6px rgba(37,99,235,0.2)}
 .v-dl.green{background:linear-gradient(135deg,#059669,#10b981)}
-.plat-badge{display:inline-flex;align-items:center;gap:4px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;font-size:.6rem;padding:2px 8px;border-radius:10px;margin-bottom:8px}
-.plat-badge i{font-size:.65rem}
+.plat-section{margin-bottom:14px}
+.plat-section:last-child{margin-bottom:0}
+.plat-section-title{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;font-size:.7rem;font-weight:600;padding:4px 12px;border-radius:14px;margin-bottom:8px}
+.plat-section-title i{font-size:.72rem}
 .no-ver{text-align:center;padding:20px;color:#94a3b8;background:#f8fafc;border-radius:6px;border:1px dashed #e2e8f0}
 .no-ver i{font-size:1rem;display:block;margin-bottom:4px;color:#cbd5e1}
 .no-ver p{font-size:.75rem;margin:0}
@@ -109,6 +127,9 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
 .footer a{color:#94a3b8;text-decoration:none;margin:0 4px}
 .footer a:hover{color:#2563eb}
 .modal-foot{display:none}
+.to-top{position:fixed;right:20px;bottom:20px;width:42px;height:42px;border:none;border-radius:50%;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 4px 14px rgba(37,99,235,0.35);z-index:1500;transition:all .2s}
+.to-top.show{display:flex}
+.to-top:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(37,99,235,0.45)}
 @media(max-width:1600px){.grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:1400px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -123,8 +144,72 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
   .modal-foot .close-mobile{width:100%;padding:10px;background:#fff;border:1px solid #cbd5e1;border-radius:6px;color:#475569;font-weight:600;font-size:.85rem;cursor:pointer}
   .modal{display:flex;flex-direction:column;max-height:90vh}
   .modal-body{flex:1;overflow-y:auto;padding-bottom:0}
+  .to-top{right:14px;bottom:14px;width:38px;height:38px}
+}
+@media(max-width:480px){
+  .page-title{font-size:1.05rem}
+  .page-subtitle{font-size:.7rem}
+  .category-pill{padding:6px 12px;font-size:.72rem}
+  .card{padding:12px;gap:10px}
+  .card-icon{width:42px;height:42px;font-size:1.4rem}
+  .card-title{font-size:.85rem}
+  .card-desc{font-size:.7rem;-webkit-line-clamp:2}
+  .modal{border-radius:8px;max-height:92vh}
+  .modal-overlay{padding:8px;align-items:center}
+  .modal-head{padding:12px 14px;gap:10px}
+  .modal-head-icon{width:36px;height:36px}
+  .modal-head-text h3{font-size:.88rem}
+  .modal-head-text p{font-size:.68rem}
+  .modal-close,.modal-fav{width:26px;height:26px;font-size:.85rem}
+  .modal-body{padding:14px}
+  .modal-section{margin-bottom:14px}
+  .modal-section-title{font-size:.78rem}
+  .modal-desc{font-size:.72rem;line-height:1.55;max-height:140px}
+  .version-item{padding:8px 10px}
+  .version-item .v-name{font-size:.74rem}
+  .v-dls{flex-wrap:wrap;gap:4px;justify-content:flex-start}
+  .v-dls .v-dl{padding:4px 9px;font-size:.65rem}
+  .plat-section{margin-bottom:10px}
+  .plat-section-title{font-size:.64rem;padding:3px 10px}
+  .search-bar{padding:8px 10px;font-size:.78rem}
+  .search-bar kbd{font-size:.6rem;padding:1px 5px}
+  .theme-toggle{width:32px;height:32px;font-size:.85rem}
+  .sidebar{width:240px}
+  .hamburger{width:36px;height:36px;font-size:1rem}
 }
 button{-webkit-tap-highlight-color:transparent!important}button:focus{outline:none!important}
+/* 暗色模式 */
+[data-theme="dark"] body,[data-theme="dark"] .main{background:#0f172a;color:#e2e8f0}
+[data-theme="dark"] .page-header{border-bottom-color:#1e293b}
+[data-theme="dark"] .page-title{color:#f1f5f9}
+[data-theme="dark"] .page-subtitle{color:#64748b}
+[data-theme="dark"] .category-head{border-bottom-color:#1e293b}
+[data-theme="dark"] .category-head h3{color:#cbd5e1}
+[data-theme="dark"] .count-badge{background:#1e293b;color:#94a3b8}
+[data-theme="dark"] .card{background:#1e293b;box-shadow:0 1px 3px rgba(0,0,0,0.3)}
+[data-theme="dark"] .card:hover{border-color:#3b82f6;box-shadow:0 6px 16px rgba(0,0,0,0.45)}
+[data-theme="dark"] .card-name{color:#f1f5f9}
+[data-theme="dark"] .card-desc{color:#94a3b8}
+[data-theme="dark"] .card-icon{background:#172033}
+[data-theme="dark"] .card-fav{background:rgba(30,41,59,0.9);color:#94a3b8}
+[data-theme="dark"] .card-fav:hover{background:#334155;color:#f59e0b}
+[data-theme="dark"] .no-data{background:#1e293b;border-color:#334155;color:#64748b}
+[data-theme="dark"] .search-bar-info{background:#1e293b;color:#93c5fd}
+[data-theme="dark"] .search-bar-info .hints kbd{border-color:#334155;color:#93c5fd}
+[data-theme="dark"] .modal{background:#1e293b}
+[data-theme="dark"] .modal-head{background:#172033;border-bottom-color:#334155}
+[data-theme="dark"] .modal-head-text h3{color:#f1f5f9}
+[data-theme="dark"] .modal-head-text p{color:#94a3b8}
+[data-theme="dark"] .modal-section-title{color:#e2e8f0;border-bottom-color:#334155}
+[data-theme="dark"] .modal-desc{color:#cbd5e1}
+[data-theme="dark"] .version-item{background:#172033;border-color:#1e293b}
+[data-theme="dark"] .version-item .v-name{color:#e2e8f0}
+[data-theme="dark"] .plat-section-title{background:linear-gradient(135deg,#1d4ed8,#3b82f6)}
+[data-theme="dark"] .no-ver{background:#172033;border-color:#334155;color:#64748b}
+[data-theme="dark"] .footer p{color:#64748b}
+[data-theme="dark"] .top-header{background:rgba(15,23,42,0.96);border-bottom-color:#1e293b}
+[data-theme="dark"] .mobile-title{color:#f1f5f9}
+[data-theme="dark"] .hamburger{background:#1e293b;color:#cbd5e1}
 </style>
 </head>
 <body>
@@ -133,6 +218,7 @@ button{-webkit-tap-highlight-color:transparent!important}button:focus{outline:no
 <div class="modal-head">
 <div class="modal-head-icon"><i class="fas fa-cube" id="mIcon"></i></div>
 <div class="modal-head-text"><h3 id="mName">详情</h3><p id="mCat">分类</p></div>
+<button class="modal-fav" id="mFav" title="收藏/取消收藏"><i class="far fa-star"></i></button>
 <button class="modal-close" id="mClose"><i class="fas fa-times"></i></button>
 </div>
 <div class="modal-body">
@@ -151,11 +237,17 @@ button{-webkit-tap-highlight-color:transparent!important}button:focus{outline:no
 </div>
 <div class="sidebar-search">
 <div class="search-wrap">
-<input type="text" placeholder="搜索软件..." id="searchInput">
+<input type="text" placeholder="搜索软件...  (按 / 聚焦)" id="searchInput">
 <i class="fas fa-search search-icon" id="searchBtn"></i>
 </div>
 </div>
-<nav class="sidebar-nav"><ul class="nav-list" id="navList"></ul></nav>
+<nav class="sidebar-nav">
+<ul class="nav-list" id="navList"></ul>
+</nav>
+<div class="sidebar-foot">
+<button class="theme-toggle" id="themeToggle" title="切换深色 / 浅色"><i class="fas fa-moon"></i></button>
+<span>深色模式</span>
+</div>
 </aside>
 <div class="top-header">
 <div class="h-inner">
@@ -175,6 +267,7 @@ button{-webkit-tap-highlight-color:transparent!important}button:focus{outline:no
 <footer class="footer"><p><a href="#">软件资源库</a> · 仅供学习交流使用</p></footer>
 </main>
 </div>
+<button class="to-top" id="toTop" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 </body>

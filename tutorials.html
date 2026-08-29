@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>安装教程库 - 软件资源库</title>
+<meta name="description" content="软件资源库 · 安装教程库：图文安装教程、激活步骤与避坑指南，覆盖 CAD、Adobe、三维动画、办公、工业工程、视频后期等分类。">
+<meta property="og:title" content="安装教程库 - 软件资源库">
+<meta property="og:description" content="图文安装教程 · 避坑指南，覆盖主流设计 / 工程软件。">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="css/site.css">
+<script>/* 主题预加载，避免闪烁 */
+(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();
+</script>
+</head>
+<body>
+<div class="overlay" id="overlay"></div>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <a class="logo" href="index.html"><i class="fas fa-cubes"></i><span>软件资源库</span></a>
+      <div class="subtitle">每日收集 · 免费分享</div>
+    </div>
+    <div class="sidebar-search">
+      <div class="search-wrap">
+        <input type="text" placeholder="搜索教程...  (按 / 聚焦)" id="searchInput">
+        <i class="fas fa-search search-icon" id="searchBtn"></i>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-item" href="index.html"><i class="fas fa-th-large"></i><span>软件库</span></a>
+      <a class="nav-item active" href="tutorials.html"><i class="fas fa-book"></i><span>安装教程库</span></a>
+      <div class="nav-section-title">教程分类</div>
+      <ul class="nav-list" id="catNavList"></ul>
+    </nav>
+    <div class="sidebar-foot">
+      <button class="theme-toggle" id="themeToggle" title="切换深色 / 浅色"><i class="fas fa-moon"></i></button>
+      <span>深色模式</span>
+    </div>
+  </aside>
+  <div class="top-header">
+    <div class="h-inner">
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+      <div class="mobile-title"><i class="fas fa-cubes"></i><span>软件资源库</span></div>
+      <div style="width:36px"></div>
+    </div>
+  </div>
+  <main class="main">
+    <div class="main-body">
+      <div class="page-header">
+        <h2 class="page-title"><i class="fas fa-book"></i><span>安装教程库</span></h2>
+        <span class="page-subtitle" id="totalCount">共 0 篇</span>
+      </div>
+      <div class="tut-list" id="tutGrid"></div>
+    </div>
+    <footer class="footer"><p><a href="index.html">软件资源库</a> · 安装教程仅供学习交流使用</p></footer>
+  </main>
+</div>
+<button class="to-top" id="toTop" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
+<script src="js/tutorials-data.js"></script>
+<script src="js/tutorials.js"></script>
+<script>initTutorialList();</script>
+</body>
+</html>
