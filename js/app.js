@@ -147,8 +147,8 @@ function renderSection(cat,items){
     items.forEach(function(s){
       var si=catIcons[s.category]||'fa-cube';
       h+='<div class="card" data-id="'+s.id+'">'+cardFavHTML(s);
-      h+='<div class="card-body"><div class="card-icon"><i class="fas '+(s.icon||si)+'"></i></div>';
-      h+='<div class="card-name">'+esc(s.name)+'</div><div class="card-desc">'+esc(s.description)+'</div></div>';
+      h+='<div class="card-icon"><i class="fas '+(s.icon||si)+'"></i></div>';
+      h+='<div class="card-body"><div class="card-name">'+esc(s.name)+'</div><div class="card-desc">'+esc(s.description)+'</div></div>';
       h+='</div>';
     });
   }
@@ -182,8 +182,8 @@ function renderSearch(){
     results.forEach(function(s,idx){
       var si=catIcons[s.category]||'fa-cube';
       html+='<div class="card" data-id="'+s.id+'" data-idx="'+idx+'">'+cardFavHTML(s);
-      html+='<div class="card-body"><div class="card-icon"><i class="fas '+(s.icon||si)+'"></i></div>';
-      html+='<div class="card-name">'+hl(esc(s.name),kw)+'</div><div class="card-desc">'+hl(esc(s.description),kw)+'</div></div>';
+      html+='<div class="card-icon"><i class="fas '+(s.icon||si)+'"></i></div>';
+      html+='<div class="card-body"><div class="card-name">'+hl(esc(s.name),kw)+'</div><div class="card-desc">'+hl(esc(s.description),kw)+'</div></div>';
       html+='</div>';
     });
   }
