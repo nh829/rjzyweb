@@ -6,6 +6,7 @@
 
 // ---- 分类配置 ----
 var categories = [
+  {slug:'编程开发', name:'编程开发', icon:'fa-code'},
   {slug:'all', name:'全部资源', icon:'fa-layer-group'},
   {slug:'Adobe', name:'Adobe', icon:'fa-pen-fancy'},
   {slug:'CAD', name:'CAD', icon:'fa-drafting-compass'},
@@ -18,16 +19,15 @@ var categories = [
   {slug:'电子电路', name:'电子电路', icon:'fa-microchip'},
   {slug:'渲染引擎', name:'渲染引擎', icon:'fa-sun'},
   {slug:'图像绘图', name:'图像绘图', icon:'fa-paint-brush'},
-  {slug:'编程开发', name:'编程开发', icon:'fa-code'},
   {slug:'装机必备', name:'装机必备', icon:'fa-desktop'},
 ];
 
 // 分类对应的卡片图标
 var catIcons = {
-  Adobe:'fa-paint-brush', CAD:'fa-drafting-compass', 三维动画:'fa-cubes',
+  编程开发:'fa-terminal', Adobe:'fa-paint-brush', CAD:'fa-drafting-compass', 三维动画:'fa-cubes',
   办公软件:'fa-file-word', 工业工程:'fa-cogs', 数据分析:'fa-chart-bar',
   建筑设计:'fa-building', 视频后期:'fa-video', 电子电路:'fa-microchip',
-  渲染引擎:'fa-sun', 图像绘图:'fa-palette', 编程开发:'fa-terminal', 装机必备:'fa-cog'
+  渲染引擎:'fa-sun', 图像绘图:'fa-palette', 装机必备:'fa-cog'
 };
 
 // ---- 软件数据 ----
