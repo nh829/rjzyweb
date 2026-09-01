@@ -6,8 +6,9 @@
 
 // ---- 分类配置 ----
 var categories = [
-  {slug:'编程开发', name:'编程开发', icon:'fa-code'},
   {slug:'all', name:'全部资源', icon:'fa-layer-group'},
+  {slug:'装机必备', name:'装机必备', icon:'fa-desktop'},
+  {slug:'编程开发', name:'编程开发', icon:'fa-code'},
   {slug:'Adobe', name:'Adobe', icon:'fa-pen-fancy'},
   {slug:'CAD', name:'CAD', icon:'fa-drafting-compass'},
   {slug:'三维动画', name:'三维动画', icon:'fa-cubes'},
@@ -19,16 +20,15 @@ var categories = [
   {slug:'电子电路', name:'电子电路', icon:'fa-microchip'},
   {slug:'渲染引擎', name:'渲染引擎', icon:'fa-sun'},
   {slug:'图像绘图', name:'图像绘图', icon:'fa-paint-brush'},
-  {slug:'装机必备', name:'装机必备', icon:'fa-desktop'},
+
 ];
 
 // 分类对应的卡片图标
 var catIcons = {
-  编程开发:'fa-terminal', Adobe:'fa-paint-brush', CAD:'fa-drafting-compass', 三维动画:'fa-cubes',
+  编程开发:'fa-terminal', 装机必备:'fa-cog', Adobe:'fa-paint-brush', CAD:'fa-drafting-compass', 三维动画:'fa-cubes',
   办公软件:'fa-file-word', 工业工程:'fa-cogs', 数据分析:'fa-chart-bar',
   建筑设计:'fa-building', 视频后期:'fa-video', 电子电路:'fa-microchip',
-  渲染引擎:'fa-sun', 图像绘图:'fa-palette', 装机必备:'fa-cog'
-};
+  渲染引擎:'fa-sun', 图像绘图:'fa-palette'
 
 // ---- 软件数据 ----
 // 每条数据的各个字段：
@@ -46,6 +46,43 @@ var catIcons = {
 //      label2:  下载2的按钮文字（如 '迅雷下载'）
 
 var softwareData = [
+  // ---- 编程开发 ----
+   {id:60, name:'Python', category:'编程开发', platform:'cross', icon:'fa-code',
+   description:'python语言',
+   detailDesc:'Python 是简洁易读的解释型高级语言，生态强大，适用于 Web、数据分析、AI 等领域，是初学者与专业开发者的热门选择。',
+   versions:[
+     {ver:'3.10.11', url1:'https://pan.quark.cn/s/49c947ac8800?pwd=VT1U', label1:'夸克网盘'},
+   ]},
+  {id:42, name:'Visual Studio 2024', category:'编程开发', platform:'cross', icon:'fa-code',
+   description:'集成开发环境',
+   detailDesc:'Visual Studio 是微软的旗舰级 IDE，支持 C#、C++、Python、JavaScript 等多种语言，适合企业级开发。',
+   versions:[
+     {ver:'2024 v17.10', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
+     {ver:'2022 v17.8', url1:'', label1:'夸克网盘'},
+     {ver:'2019 v16.11', url1:'', label1:'夸克网盘'}
+   ]},
+  {id:43, name:'VS Code', category:'编程开发', platform:'cross', icon:'fa-code',
+   description:'轻量级代码编辑器',
+   detailDesc:'VS Code 是微软开发的免费开源代码编辑器，拥有丰富的扩展生态，是目前最流行的开发工具之一。',
+   versions:[
+     {ver:'1.92', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
+     {ver:'1.90', url1:'', label1:'夸克网盘'},
+     {ver:'1.88', url1:'', label1:'夸克网盘'}
+   ]},
+  {id:44, name:'IntelliJ IDEA 2024', category:'编程开发', platform:'cross', icon:'fa-brain',
+   description:'Java 开发IDE',
+   detailDesc:'IntelliJ IDEA 是 JetBrains 开发的 Java/Kotlin 开发 IDE，以智能代码补全和强大的重构功能著称。',
+   versions:[
+     {ver:'2024.2', url1:'', label1:'夸克网盘'},
+     {ver:'2024.1', url1:'', label1:'夸克网盘'}
+   ]},
+  {id:45, name:'Git 2.45', category:'编程开发', platform:'cross', icon:'fa-branch',
+   description:'版本控制工具',
+   detailDesc:'Git 是目前最流行的分布式版本控制系统，几乎所有的软件开发项目都在使用 Git 进行代码管理。',
+   versions:[
+     {ver:'2.45.2', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
+     {ver:'2.43.0', url1:'', label1:'夸克网盘'}
+   ]},
   // ---- Adobe ----
   {id:1, name:'Adobe Photoshop 2024', category:'Adobe', platform:'cross', icon:'fa-paint-brush',
    description:'专业图像处理与设计软件，广泛应用于平面设计、摄影修图、UI/UX 设计、数字绘画等领域。2024 版本带来了 AI 智能填充、神经网络滤镜等革命性功能。',
@@ -356,37 +393,6 @@ var softwareData = [
    versions:[
      {ver:'2.10.36', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
      {ver:'2.10.34', url1:'', label1:'夸克网盘'}
-   ]},
-  // ---- 编程开发 ----
-  {id:42, name:'Visual Studio 2024', category:'编程开发', platform:'cross', icon:'fa-code',
-   description:'集成开发环境',
-   detailDesc:'Visual Studio 是微软的旗舰级 IDE，支持 C#、C++、Python、JavaScript 等多种语言，适合企业级开发。',
-   versions:[
-     {ver:'2024 v17.10', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
-     {ver:'2022 v17.8', url1:'', label1:'夸克网盘'},
-     {ver:'2019 v16.11', url1:'', label1:'夸克网盘'}
-   ]},
-  {id:43, name:'VS Code', category:'编程开发', platform:'cross', icon:'fa-code',
-   description:'轻量级代码编辑器',
-   detailDesc:'VS Code 是微软开发的免费开源代码编辑器，拥有丰富的扩展生态，是目前最流行的开发工具之一。',
-   versions:[
-     {ver:'1.92', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
-     {ver:'1.90', url1:'', label1:'夸克网盘'},
-     {ver:'1.88', url1:'', label1:'夸克网盘'}
-   ]},
-  {id:44, name:'IntelliJ IDEA 2024', category:'编程开发', platform:'cross', icon:'fa-brain',
-   description:'Java 开发IDE',
-   detailDesc:'IntelliJ IDEA 是 JetBrains 开发的 Java/Kotlin 开发 IDE，以智能代码补全和强大的重构功能著称。',
-   versions:[
-     {ver:'2024.2', url1:'', label1:'夸克网盘'},
-     {ver:'2024.1', url1:'', label1:'夸克网盘'}
-   ]},
-  {id:45, name:'Git 2.45', category:'编程开发', platform:'cross', icon:'fa-branch',
-   description:'版本控制工具',
-   detailDesc:'Git 是目前最流行的分布式版本控制系统，几乎所有的软件开发项目都在使用 Git 进行代码管理。',
-   versions:[
-     {ver:'2.45.2', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
-     {ver:'2.43.0', url1:'', label1:'夸克网盘'}
    ]},
   // ---- 装机必备 ----
   {id:46, name:'7-Zip 24.08', category:'装机必备', platform:'win', icon:'fa-file-archive',
