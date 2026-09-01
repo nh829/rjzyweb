@@ -22,10 +22,11 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
 .app{display:flex;min-height:100vh;width:100%}
 .sidebar{width:260px;flex-shrink:0;background:linear-gradient(180deg,#1e293b 0%,#0f172a 100%);color:#fff;position:sticky;top:0;height:100vh;overflow:hidden;z-index:100;display:flex;flex-direction:column;scrollbar-width:none}
 .sidebar::-webkit-scrollbar{display:none}
-.sidebar-brand{padding:24px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.08)}
-.sidebar-brand .logo{display:flex;align-items:center;gap:10px;font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:2px}
-.sidebar-brand .logo i{background:linear-gradient(135deg,#3b82f6,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.3rem}
-.sidebar-brand .subtitle{font-size:.72rem;color:#64748b;margin-left:36px}
+.sidebar-brand{padding:18px 18px 14px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.sidebar-brand .logo{display:flex;align-items:center;gap:12px;font-size:1.05rem;font-weight:700;color:#fff;line-height:1.2}
+.sidebar-brand .logo i{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#3b82f6,#60a5fa);border-radius:8px;color:#fff;font-size:1.05rem;flex-shrink:0;box-shadow:0 2px 8px rgba(59,130,246,0.25)}
+.sidebar-brand .logo>span{white-space:nowrap}
+.sidebar-brand .subtitle{font-size:.66rem;color:#94a3b8;margin-top:6px;padding-left:48px;letter-spacing:.2px}
 .sidebar-search{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.06)}
 .search-wrap{position:relative;width:100%}
 .search-wrap input{width:100%;padding:7px 32px 7px 12px;border:1px solid rgba(255,255,255,0.12);border-radius:16px;font-size:.78rem;outline:none;transition:all .25s;background:rgba(0,0,0,0.25);color:#fff}
@@ -138,6 +139,10 @@ body{background:#f0f4f8;color:#1e293b;font-family:-apple-system,BlinkMacSystemFo
   .top-header{display:block;flex-shrink:0}.hamburger{display:flex!important}
   .sidebar{position:fixed;left:0;top:0;height:100vh;width:82%;max-width:320px;min-width:260px;z-index:2000;transform:translateX(-100%);transition:transform .3s;box-shadow:none}
   .sidebar.show{transform:translateX(0);box-shadow:4px 0 24px rgba(0,0,0,0.35)}
+  .sidebar-brand{padding:16px 18px 12px}
+  .sidebar-brand .logo{font-size:.98rem;gap:10px}
+  .sidebar-brand .logo i{width:34px;height:34px;font-size:1rem}
+  .sidebar-brand .subtitle{font-size:.62rem;padding-left:44px;margin-top:5px}
   .nav-list{gap:4px}
   .nav-item{padding:10px 14px;font-size:.88rem}
   .nav-item .count{display:none}

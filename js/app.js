@@ -302,6 +302,16 @@ function bindEvents(){
   var mf=$('mFav');if(mf)mf.addEventListener('click',function(){if(state.curId!=null)toggleFav(state.curId);});
   var tt=$('themeToggle');if(tt)tt.addEventListener('click',toggleTheme);
   var tb=$('toTop');if(tb)tb.addEventListener('click',function(){mainEl.scrollTo({top:0,behavior:'smooth'});});
+  var ham=$('hamburger');var ovl=$('overlay');
+  function closeMobileMenu(){var sb=$('sidebar');if(sb)sb.classList.remove('show');if(ovl)ovl.classList.remove('show');}
+  if(ham)ham.addEventListener('click',function(){
+    var sb=$('sidebar');var opened=sb&&sb.classList.contains('show');
+    if(opened){closeMobileMenu();}else{
+      if(sb)sb.classList.add('show');
+      if(ovl)ovl.classList.add('show');
+    }
+  });
+  if(ovl)ovl.addEventListener('click',closeMobileMenu);
   modal.addEventListener('click',function(e){if(e.target===this)closeModalFn();});
   document.addEventListener('keydown',function(e){
     if(e.key==='Escape'&&modal.classList.contains('active')){closeModalFn();return;}
