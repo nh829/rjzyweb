@@ -226,29 +226,13 @@ function openModal(sw){
   var mb=$('mFav');if(mb)setFavBtn(mb,sw.id);
   var vh='';
   if(sw.versions&&sw.versions.length>0){
-    var pk=sw.platform||'cross';
-    var plats;
-    if(pk==='win')plats=[{n:'Windows 电脑',ic:'fa-windows'}];
-    else if(pk==='mac')plats=[{n:'macOS 电脑',ic:'fa-apple'}];
-    else if(pk==='linux')plats=[{n:'Linux 电脑',ic:'fa-linux'}];
-    else plats=[{n:'Windows 电脑',ic:'fa-windows'},{n:'macOS 电脑',ic:'fa-apple'}];
-    var renderItems=function(){
-      var x='';
-      sw.versions.forEach(function(v){
-        x+='<div class="version-item"><div><span class="v-name">'+v.ver+'</span></div><div class="v-dls">';
-        if(v.url1){x+='<a href="'+v.url1+'" class="v-dl green" target="_blank" rel="noopener"><i class="fas fa-cloud-download-alt"></i> '+v.label1+'</a>';}
-        else{x+='<span class="v-dl green"><i class="fas fa-cloud-download-alt"></i> '+v.label1+'</span>';}
-        if(v.url2){x+='<a href="'+v.url2+'" class="v-dl" target="_blank" rel="noopener"><i class="fas fa-download"></i> '+v.label2+'</a>';}
-        else if(v.label2){x+='<span class="v-dl"><i class="fas fa-download"></i> '+v.label2+'</span>';}
-        x+='</div></div>';
-      });
-      return x;
-    };
-    plats.forEach(function(p){
-      vh+='<section class="plat-section">';
-      vh+='<div class="plat-section-title"><i class="fas '+p.ic+'"></i><span>'+p.n+'</span></div>';
-      vh+=renderItems();
-      vh+='</section>';
+    sw.versions.forEach(function(v){
+      vh+='<div class="version-item"><div><span class="v-name">'+v.ver+'</span></div><div class="v-dls">';
+      if(v.url1){vh+='<a href="'+v.url1+'" class="v-dl green" target="_blank" rel="noopener"><i class="fas fa-cloud-download-alt"></i> '+v.label1+'</a>';}
+      else{vh+='<span class="v-dl green"><i class="fas fa-cloud-download-alt"></i> '+v.label1+'</span>';}
+      if(v.url2){vh+='<a href="'+v.url2+'" class="v-dl" target="_blank" rel="noopener"><i class="fas fa-download"></i> '+v.label2+'</a>';}
+      else if(v.label2){vh+='<span class="v-dl"><i class="fas fa-download"></i> '+v.label2+'</span>';}
+      vh+='</div></div>';
     });
   }else{
     vh='<div class="no-ver"><i class="fas fa-info-circle"></i><p>暂无版本信息</p></div>';
