@@ -29,6 +29,7 @@ var catIcons = {
   办公软件:'fa-file-word', 工业工程:'fa-cogs', 数据分析:'fa-chart-bar',
   建筑设计:'fa-building', 视频后期:'fa-video', 电子电路:'fa-microchip',
   渲染引擎:'fa-sun', 图像绘图:'fa-palette'
+};
 
 // ---- 软件数据 ----
 // 每条数据的各个字段：
