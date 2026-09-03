@@ -56,7 +56,7 @@ var softwareData = [
      {ver:'3.10.11（macOS）', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VodMDbhEl6yni2Wo1GLOzA1?pwd=er3r', label2:'迅雷下载'},
    ]},
 
-  {id:60, name:'Pycharm', category:'编程开发', platform:'cross', icon:'fa-code',
+  {id:62, name:'Pycharm', category:'编程开发', platform:'cross', icon:'fa-code',
    description:'安装包支持windows电脑和macOS电脑',
    detailDesc:'PyCharm：专为Python开发设计的智能代码编辑器, 提供智能代码补全、调试和重构的高效IDE。',
    versions:[
