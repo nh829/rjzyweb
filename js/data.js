@@ -53,15 +53,15 @@ var softwareData = [
    detailDesc:'Python 是数据科学和机器学习领域最流行的编程语言，拥有 pandas、numpy、matplotlib 等强大的数据分析生态。',
    versions:[
      {ver:'3.10.11（win）', url1:'https://pan.quark.cn/s/49c947ac8800?pwd=VT1U', label1:'夸克网盘',url2:'https://pan.xunlei.com/s/VP0VojT1LdY80ugfM4zWBpqeA1?pwd=gycp', label2:'迅雷下载'},
-     {ver:'3.10.11（macOS）', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VodMDbhEl6yni2Wo1GLOzA1?pwd=er3r', label2:'迅雷下载'},
+     {ver:'3.10.11（macOS）', url2:'https://pan.xunlei.com/s/VP0VodMDbhEl6yni2Wo1GLOzA1?pwd=er3r', label2:'迅雷下载'},
    ]},
 
   {id:62, name:'Pycharm', category:'编程开发', platform:'cross', icon:'fa-code',
    description:'安装包支持windows电脑和macOS电脑',
    detailDesc:'PyCharm：专为Python开发设计的智能代码编辑器, 提供智能代码补全、调试和重构的高效IDE。',
    versions:[
-     {ver:'25.1.4（win）', url1:'', label1:'夸克网盘',url2:'https://pan.xunlei.com/s/VP0VoQ6lWUHX21WYhEApOmVjA1?pwd=g35b', label2:'迅雷下载'},
-     {ver:'25.1.4（macOS）', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VoSrTLdY80ugfM4zWBRpvA1?pwd=3ihm', label2:'迅雷下载'},
+     {ver:'25.1.4（win）', url2:'https://pan.xunlei.com/s/VP0VoQ6lWUHX21WYhEApOmVjA1?pwd=g35b', label2:'迅雷下载'},
+     {ver:'25.1.4（macOS）', url2:'https://pan.xunlei.com/s/VP0VoSrTLdY80ugfM4zWBRpvA1?pwd=3ihm', label2:'迅雷下载'},
    ]},
   {id:42, name:'Visual Studio 2024', category:'编程开发', platform:'cross', icon:'fa-code',
    description:'集成开发环境',
