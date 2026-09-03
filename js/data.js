@@ -165,11 +165,6 @@ var softwareData = [
         links:[
           {url:'https://pan.quark.cn/s/a93f13dd0ba8?pwd=umHx', label:'夸克网盘'},
         ]
-      },
-      {ver:'2.43.0',
-        links:[
-          {url:'', label:'夸克网盘'}
-        ]
       }
     ]
   },
@@ -397,11 +392,10 @@ var softwareData = [
     versions:[
       {ver:'CAD2018',
         links:[
-          {url:'https://pan.quark.cn/s/aafc7d93d163?pwd=7UMw', label:'夸克网盘'},
-          {url:'', label:'迅雷下载'}
+          {url:'https://pan.quark.cn/s/aafc7d93d163?pwd=7UMw', label:'夸克网盘'}
         ]
       },
-	  {ver:'CAD2024',
+      {ver:'CAD2024',
         links:[
           {url:'https://pan.xunlei.com/s/VP0b2gbj4NYSZJmZMGaYg3xgA1?pwd=yf5j', label:'迅雷下载'}
         ]
