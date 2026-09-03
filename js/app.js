@@ -228,10 +228,19 @@ function openModal(sw){
   if(sw.versions&&sw.versions.length>0){
     sw.versions.forEach(function(v){
       vh+='<div class="version-item"><div><span class="v-name">'+v.ver+'</span></div><div class="v-dls">';
-      if(v.url1){vh+='<a href="'+v.url1+'" class="v-dl green" target="_blank" rel="noopener"><i class="fas fa-cloud-download-alt"></i> '+v.label1+'</a>';}
-      else{vh+='<span class="v-dl green"><i class="fas fa-cloud-download-alt"></i> '+v.label1+'</span>';}
-      if(v.url2){vh+='<a href="'+v.url2+'" class="v-dl" target="_blank" rel="noopener"><i class="fas fa-download"></i> '+v.label2+'</a>';}
-      else if(v.label2){vh+='<span class="v-dl"><i class="fas fa-download"></i> '+v.label2+'</span>';}
+      var links=(v.links&&v.links.length)?v.links:null;
+      if(links){
+        links.forEach(function(l){
+          var label=(l&&l.label)?l.label:'下载';
+          if(l&&l.url){
+            vh+='<a href="'+l.url+'" class="v-dl green" target="_blank" rel="noopener"><i class="fas fa-download"></i> '+label+'</a>';
+          }else if(l&&l.label){
+            vh+='<span class="v-dl pending" title="链接待更新"><i class="fas fa-clock"></i> '+label+'</span>';
+          }
+        });
+      }else{
+        vh+='<span class="v-dl pending"><i class="fas fa-clock"></i> 待更新</span>';
+      }
       vh+='</div></div>';
     });
   }else{
