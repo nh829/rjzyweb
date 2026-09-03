@@ -7,14 +7,14 @@
 // ---- 分类配置 ----
 var categories = [
   {slug:'all', name:'全部资源', icon:'fa-layer-group'},
-  {slug:'装机必备', name:'装机必备', icon:'fa-desktop'},
   {slug:'编程开发', name:'编程开发', icon:'fa-code'},
+  {slug:'数据分析', name:'数据分析', icon:'fa-chart-bar'},
+  {slug:'装机必备', name:'装机必备', icon:'fa-desktop'},
   {slug:'Adobe', name:'Adobe', icon:'fa-pen-fancy'},
   {slug:'CAD', name:'CAD', icon:'fa-drafting-compass'},
   {slug:'三维动画', name:'三维动画', icon:'fa-cubes'},
   {slug:'办公软件', name:'办公软件', icon:'fa-file-alt'},
   {slug:'工业工程', name:'工业工程', icon:'fa-cogs'},
-  {slug:'数据分析', name:'数据分析', icon:'fa-chart-bar'},
   {slug:'建筑设计', name:'建筑设计', icon:'fa-building'},
   {slug:'视频后期', name:'视频后期', icon:'fa-film'},
   {slug:'电子电路', name:'电子电路', icon:'fa-microchip'},
@@ -49,10 +49,19 @@ var catIcons = {
 var softwareData = [
   // ---- 编程开发 ----
    {id:60, name:'Python', category:'编程开发', platform:'cross', icon:'fa-code',
-   description:'python语言',
-   detailDesc:'Python 是简洁易读的解释型高级语言，生态强大，适用于 Web、数据分析、AI 等领域，是初学者与专业开发者的热门选择。',
+   description:'python安装包支持windows电脑和macOS电脑',
+   detailDesc:'Python 是数据科学和机器学习领域最流行的编程语言，拥有 pandas、numpy、matplotlib 等强大的数据分析生态。',
    versions:[
-     {ver:'3.10.11', url1:'https://pan.quark.cn/s/49c947ac8800?pwd=VT1U', label1:'夸克网盘'},
+     {ver:'3.10.11（win）', url1:'https://pan.quark.cn/s/49c947ac8800?pwd=VT1U', label1:'夸克网盘',url2:'https://pan.xunlei.com/s/VP0VojT1LdY80ugfM4zWBpqeA1?pwd=gycp', label2:'迅雷下载'},
+     {ver:'3.10.11（macOS）', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VodMDbhEl6yni2Wo1GLOzA1?pwd=er3r', label2:'迅雷下载'},
+   ]},
+
+  {id:60, name:'Pycharm', category:'编程开发', platform:'cross', icon:'fa-code',
+   description:'安装包支持windows电脑和macOS电脑',
+   detailDesc:'PyCharm：专为Python开发设计的智能代码编辑器, 提供智能代码补全、调试和重构的高效IDE。',
+   versions:[
+     {ver:'25.1.4（win）', url1:'', label1:'夸克网盘',url2:'https://pan.xunlei.com/s/VP0VoQ6lWUHX21WYhEApOmVjA1?pwd=g35b', label2:'迅雷下载'},
+     {ver:'25.1.4（macOS）', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VoSrTLdY80ugfM4zWBRpvA1?pwd=3ihm', label2:'迅雷下载'},
    ]},
   {id:42, name:'Visual Studio 2024', category:'编程开发', platform:'cross', icon:'fa-code',
    description:'集成开发环境',
@@ -84,6 +93,55 @@ var softwareData = [
      {ver:'2.45.2', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
      {ver:'2.43.0', url1:'', label1:'夸克网盘'}
    ]},
+
+
+// ---- 数据分析 ----
+  {id:23, name:'MySQL和管理工具', category:'数据分析', platform:'cross', icon:'fa-code',
+   description:'轻量易用的关系型数据库',
+   detailDesc:'MySQL是一款开源、稳定、高效的关系型数据库管理系统，广泛用于网站和应用程序的数据存储与管理。',
+   versions:[
+     {ver:'mysql 8.0.36 zip', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0Vnu3sWGP2dDcH3msVc0R6A1?pwd=b7xj', label2:'迅雷下载'},
+     {ver:'mysql 9.3.0 msi', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0Vnxxe5xcOQo19hfUWZnrXA1?pwd=mis9', label2:'迅雷下载'},
+   ]},
+
+  {id:61, name:'MySQLworkbench', category:'数据分析', platform:'cross', icon:'fa-code',
+   description:'Mysql管理工具',
+   detailDesc:'MySQL是一款开源、稳定、高效的关系型数据库管理系统，广泛用于网站和应用程序的数据存储与管理。',
+   versions:[
+     {ver:'mysqlworkbench', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0Vno5kEBTgAC6p1Qv4OUTDA1?pwd=4sdr', label2:'迅雷下载'},
+   ]},
+
+ {id:62, name:'Navicat', category:'数据分析', platform:'cross', icon:'fa-code',
+   description:'Mysql管理工具',
+   detailDesc:'MySQL是一款开源、稳定、高效的关系型数据库管理系统，广泛用于网站和应用程序的数据存储与管理。',
+   versions:[
+     {ver:'Navicat 17 (win)', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VnFgGqPOVzLzgDdVzVE0PA1?pwd=9ixf', label2:'迅雷下载'},
+     {ver:'Navicat 17 (macOS)', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VnjHXFfXHbuo64Ja9jii2A1?pwd=e8d9', label2:'迅雷下载'},
+     {ver:'Navicat 16 (win)', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0Vne0fDRcmG2AjUBVyXuEvA1?pwd=hsgc', label2:'迅雷下载'},
+   ]},
+
+  {id:20, name:'Tableau 2024.2', category:'数据分析', platform:'cross', icon:'fa-chart-bar',
+   description:'数据可视化与BI',
+   detailDesc:'Tableau 是业界领先的数据可视化分析平台，帮助用户通过交互式仪表盘快速理解和分享数据洞察。',
+   versions:[
+     {ver:'2024.2', url1:'', label1:'夸克网盘'},
+     {ver:'2024.1', url1:'', label1:'夸克网盘'},
+     {ver:'2023.4', url1:'', label1:'夸克网盘'}
+   ]},
+  {id:21, name:'Origin', category:'数据分析', platform:'win', icon:'fa-chart-pie',
+   description:'ORIGIN是一款专业的科学绘图与数据分析软件',
+   detailDesc:'处理数据、制作高质量图表，并支持复杂的数据分析，在学术界和工业界应用广泛',
+   versions:[
+     {ver:'2024', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0Zw62Wh7wgGlBVlVyWlVk3A1?pwd=fpza', label2:'迅雷下载'},
+   ]},
+  {id:22, name:'SPSS 29', category:'数据分析', platform:'cross', icon:'fa-chart-simple',
+   description:'统计分析软件',
+   detailDesc:'SPSS 是 IBM 开发的统计分析软件，广泛应用于社会科学、市场调研、医疗研究等领域的统计分析工作。',
+   versions:[
+     {ver:'v29.0', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
+     {ver:'v28.0', url1:'', label1:'夸克网盘'}
+   ]},
+
   // ---- Adobe ----
   {id:1, name:'Adobe Photoshop 2024', category:'Adobe', platform:'cross', icon:'fa-paint-brush',
    description:'专业图像处理与设计软件，广泛应用于平面设计、摄影修图、UI/UX 设计、数字绘画等领域。2024 版本带来了 AI 智能填充、神经网络滤镜等革命性功能。',
@@ -123,13 +181,12 @@ var softwareData = [
      {ver:'2023 v6.4', url1:'', label1:'夸克网盘'}
    ]},
   // ---- CAD ----
-  {id:6, name:'AutoCAD 2025', category:'CAD', platform:'cross', icon:'fa-drafting-compass',
+  {id:6, name:'AutoCAD', category:'CAD', platform:'cross', icon:'fa-drafting-compass',
    description:'计算机辅助设计',
    detailDesc:'AutoCAD 是 Autodesk 的旗舰 CAD 软件，广泛应用于建筑、机械、电气、土木等领域的二维绘图和三维建模。',
    versions:[
-     {ver:'2025 v1.0', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
-     {ver:'2024 v24.3', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
-     {ver:'2023 v23.7', url1:'', label1:'夸克网盘'}
+     {ver:'CAD2018', url1:'https://pan.quark.cn/s/aafc7d93d163?pwd=7UMw', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
+  
    ]},
   {id:7, name:'SolidWorks 2024', category:'CAD', platform:'win', icon:'fa-cube',
    description:'三维机械设计',
@@ -192,12 +249,11 @@ var softwareData = [
      {ver:'2021 专业增强版', url1:'', label1:'夸克网盘'},
      {ver:'2019 专业增强版', url1:'', label1:'夸克网盘'}
    ]},
-  {id:15, name:'WPS Office 2024', category:'办公软件', platform:'cross', icon:'fa-file',
+  {id:15, name:'WPS Office', category:'办公软件', platform:'cross', icon:'fa-file',
    description:'国产办公软件',
    detailDesc:'WPS Office 是金山软件开发的办公软件套件，完美兼容 Office 格式，个人版免费使用。',
    versions:[
-     {ver:'2024 专业版', url1:'', label1:'夸克网盘'},
-     {ver:'2023 专业版', url1:'', label1:'夸克网盘'}
+     {ver:'2025 专业版', url1:'', label1:'夸克网盘', url2:'https://pan.xunlei.com/s/VP0VoH6Mb4m7gVf5IXsiaf7zA1?pwd=vfym', label2:'迅雷下载'},
    ]},
   {id:16, name:'LibreOffice 24.8', category:'办公软件', platform:'cross', icon:'fa-file-alt',
    description:'开源办公套件',
@@ -227,37 +283,6 @@ var softwareData = [
    detailDesc:'LabVIEW 是 NI 开发的图形化编程环境，专为测试、测量和自动化控制应用设计。',
    versions:[
      {ver:'2024', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'}
-   ]},
-  // ---- 数据分析 ----
-  {id:20, name:'Tableau 2024.2', category:'数据分析', platform:'cross', icon:'fa-chart-bar',
-   description:'数据可视化与BI',
-   detailDesc:'Tableau 是业界领先的数据可视化分析平台，帮助用户通过交互式仪表盘快速理解和分享数据洞察。',
-   versions:[
-     {ver:'2024.2', url1:'', label1:'夸克网盘'},
-     {ver:'2024.1', url1:'', label1:'夸克网盘'},
-     {ver:'2023.4', url1:'', label1:'夸克网盘'}
-   ]},
-  {id:21, name:'Power BI Desktop', category:'数据分析', platform:'win', icon:'fa-chart-pie',
-   description:'微软商业智能工具',
-   detailDesc:'Power BI 是 Microsoft 推出的商业分析服务，提供交互式可视化和商业智能功能，支持海量数据源连接。',
-   versions:[
-     {ver:'2024.07', url1:'', label1:'夸克网盘'},
-     {ver:'2023.12', url1:'', label1:'夸克网盘'}
-   ]},
-  {id:22, name:'SPSS 29', category:'数据分析', platform:'cross', icon:'fa-chart-simple',
-   description:'统计分析软件',
-   detailDesc:'SPSS 是 IBM 开发的统计分析软件，广泛应用于社会科学、市场调研、医疗研究等领域的统计分析工作。',
-   versions:[
-     {ver:'v29.0', url1:'', label1:'夸克网盘', url2:'', label2:'迅雷下载'},
-     {ver:'v28.0', url1:'', label1:'夸克网盘'}
-   ]},
-  {id:23, name:'Python 3.12', category:'数据分析', platform:'cross', icon:'fa-code',
-   description:'数据科学编程语言',
-   detailDesc:'Python 是数据科学和机器学习领域最流行的编程语言，拥有 pandas、numpy、matplotlib 等强大的数据分析生态。',
-   versions:[
-     {ver:'3.12.4', url1:'', label1:'夸克网盘', url2:'', label2:'官方下载'},
-     {ver:'3.11.9', url1:'', label1:'夸克网盘'},
-     {ver:'3.10.14', url1:'', label1:'夸克网盘'}
    ]},
   // ---- 建筑设计 ----
   {id:24, name:'Revit 2025', category:'建筑设计', platform:'win', icon:'fa-building',
