@@ -400,7 +400,7 @@ var softwareData = [
           {url:'https://pan.quark.cn/s/aafc7d93d163?pwd=7UMw', label:'夸克网盘'},
           {url:'', label:'迅雷下载'}
         ]
-      }
+      },
 	  {ver:'CAD2024',
         links:[
           {url:'https://pan.xunlei.com/s/VP0b2gbj4NYSZJmZMGaYg3xgA1?pwd=yf5j', label:'迅雷下载'}
