@@ -92,24 +92,14 @@ var softwareData = [
     ]
   },
 
-  {id:42, name:'Visual Studio 2024', category:'编程开发', platform:'cross', icon:'fa-code',
+  {id:42, name:'Visual Studio', category:'编程开发', platform:'cross', icon:'fa-code',
     description:'集成开发环境',
     detailDesc:'Visual Studio 是微软的旗舰级 IDE，支持 C#、C++、Python、JavaScript 等多种语言，适合企业级开发。',
     versions:[
-      {ver:'2024 v17.10',
+      {ver:'2022',
         links:[
-          {url:'', label:'夸克网盘'},
+          {url:'https://pan.quark.cn/s/477e2040a2e6?pwd=qaue', label:'夸克网盘'},
           {url:'', label:'迅雷下载'}
-        ]
-      },
-      {ver:'2022 v17.8',
-        links:[
-          {url:'', label:'夸克网盘'}
-        ]
-      },
-      {ver:'2019 v16.11',
-        links:[
-          {url:'', label:'夸克网盘'}
         ]
       }
     ]
@@ -119,20 +109,14 @@ var softwareData = [
     description:'轻量级代码编辑器',
     detailDesc:'VS Code 是微软开发的免费开源代码编辑器，拥有丰富的扩展生态，是目前最流行的开发工具之一。',
     versions:[
-      {ver:'1.92',
+      {ver:'1.130(window)',
         links:[
-          {url:'', label:'夸克网盘'},
-          {url:'', label:'官方下载'}
+          {url:'https://pan.quark.cn/s/d0f42fdf3e3b?pwd=3d4J', label:'夸克网盘'},
         ]
       },
-      {ver:'1.90',
+      {ver:'1.130 (macOS)',
         links:[
-          {url:'', label:'夸克网盘'}
-        ]
-      },
-      {ver:'1.88',
-        links:[
-          {url:'', label:'夸克网盘'}
+          {url:'https://pan.quark.cn/s/46ffb697fbab?pwd=RhgB', label:'夸克网盘'}
         ]
       }
     ]
@@ -163,6 +147,23 @@ var softwareData = [
         links:[
           {url:'', label:'夸克网盘'},
           {url:'', label:'官方下载'}
+        ]
+      },
+      {ver:'2.43.0',
+        links:[
+          {url:'', label:'夸克网盘'}
+        ]
+      }
+    ]
+  },
+  
+  {id:69, name:'C/C++', category:'编程开发', platform:'cross', icon:'fa-branch',
+    description:'编程语言',
+    detailDesc:'C++是一种高效、灵活的通用编程语言，支持面向对象和泛型编程，广泛用于系统开发、游戏引擎和高效性能领域。',
+    versions:[
+      {ver:'DEV C++',
+        links:[
+          {url:'https://pan.quark.cn/s/a93f13dd0ba8?pwd=umHx', label:'夸克网盘'},
         ]
       },
       {ver:'2.43.0',
@@ -400,6 +401,11 @@ var softwareData = [
           {url:'', label:'迅雷下载'}
         ]
       }
+	  {ver:'CAD2024',
+        links:[
+          {url:'https://pan.xunlei.com/s/VP0b2gbj4NYSZJmZMGaYg3xgA1?pwd=yf5j', label:'迅雷下载'}
+        ]
+      }
     ]
   },
 
@@ -541,7 +547,7 @@ var softwareData = [
 
 
   // ---- 办公软件 ----
-  {id:14, name:'Microsoft Office 2024', category:'办公软件', platform:'cross', icon:'fa-file-word',
+  {id:14, name:'Microsoft Office', category:'办公软件', platform:'cross', icon:'fa-file-word',
     description:'办公软件套件',
     detailDesc:'Microsoft Office 包含 Word、Excel、PowerPoint、Outlook、Access 等核心办公应用，是最主流的办公软件套件。',
     versions:[
@@ -553,7 +559,7 @@ var softwareData = [
       },
       {ver:'2021 专业增强版',
         links:[
-          {url:'', label:'夸克网盘'}
+          {url:'https://pan.xunlei.com/s/VP0aY3haSfyPOYNtZv4c2ntLA1?pwd=mri7', label:'迅雷下载'}
         ]
       },
       {ver:'2019 专业增强版',
