@@ -100,7 +100,7 @@ function renderSoftList() {
     var vn = (s.versions || []).length;
     var on = S.softId != null && String(s.id) === String(S.softId) ? " on" : "";
     h += '<div class="soft-item' + on + '" data-sid="' + esc(s.id) + '">' +
-      '<div class="soft-ic' + (s.iconImg ? " custom" : "") + '">' + (s.iconImg ? '<img src="' + esc(s.iconImg) + '" alt="">' : '<i class="' + esc(s.icon || "fa-cube") + '"></i>') + '</div>' +
+      '<div class="soft-ic' + (s.iconImg ? " custom" : "") + '">' + (s.iconImg ? '<img src="' + esc(s.iconImg) + '" alt="">' : '<i class="fas ' + esc(s.icon || "fa-cube") + '"></i>') + '</div>' +
       '<div class="soft-txt"><div class="nm">' + esc(s.name || "(未命名)") + '</div>' +
       '<div class="sb">' + esc(s.category || "") + (vn ? " · " + vn + " 个版本" : " · 暂无版本") + '</div></div></div>';
   });
@@ -280,7 +280,7 @@ function renderTutList() {
   items.forEach(function (t) {
     var on = S.tutId != null && String(t.id) === String(S.tutId) ? " on" : "";
     h += '<div class="tut-item' + on + '" data-tid="' + esc(t.id) + '">' +
-      '<div class="soft-ic"><i class="' + esc(t.catIcon || "fa-book") + '"></i></div>' +
+      '<div class="soft-ic"><i class="fas ' + esc(t.catIcon || "fa-book") + '"></i></div>' +
       '<div class="soft-txt"><div class="nm">' + esc(t.title || "(未命名)") + '</div>' +
       '<div class="sb">' + esc(t.category || "") + (t.date ? " · " + esc(t.date) : "") + '</div></div></div>';
   });
