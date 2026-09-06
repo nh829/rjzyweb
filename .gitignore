@@ -14,3 +14,6 @@ Thumbs.db
 _inject.py
 _fix.py
 _t.py
+
+# 数据编辑器自动备份（不入库）
+editor/.backups/
