@@ -100,8 +100,7 @@ var softwareData = [
       {
         ver: '2022',
         links: [
-          {url: 'https://pan.quark.cn/s/477e2040a2e6?pwd=qaue', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
+          {url: 'https://pan.quark.cn/s/477e2040a2e6?pwd=qaue', label: '夸克网盘'}
         ]
       }
     ]
@@ -228,7 +227,6 @@ var softwareData = [
       {
         ver: 'mysql 9.3.0 msi',
         links: [
-          {url: '', label: '夸克网盘'},
           {url: 'https://pan.xunlei.com/s/VP0Vnxxe5xcOQo19hfUWZnrXA1?pwd=mis9', label: '迅雷下载'}
         ]
       }
@@ -246,7 +244,6 @@ var softwareData = [
       {
         ver: 'mysqlworkbench',
         links: [
-          {url: '', label: '夸克网盘'},
           {url: 'https://pan.xunlei.com/s/VP0Vno5kEBTgAC6p1Qv4OUTDA1?pwd=4sdr', label: '迅雷下载'}
         ]
       }
@@ -264,21 +261,18 @@ var softwareData = [
       {
         ver: 'Navicat 17 (win)',
         links: [
-          {url: '', label: '夸克网盘'},
           {url: 'https://pan.xunlei.com/s/VP0VnFgGqPOVzLzgDdVzVE0PA1?pwd=9ixf', label: '迅雷下载'}
         ]
       },
       {
         ver: 'Navicat 17 (macOS)',
         links: [
-          {url: '', label: '夸克网盘'},
           {url: 'https://pan.xunlei.com/s/VP0VnjHXFfXHbuo64Ja9jii2A1?pwd=e8d9', label: '迅雷下载'}
         ]
       },
       {
         ver: 'Navicat 16 (win)',
         links: [
-          {url: '', label: '夸克网盘'},
           {url: 'https://pan.xunlei.com/s/VP0Vne0fDRcmG2AjUBVyXuEvA1?pwd=hsgc', label: '迅雷下载'}
         ]
       }
