@@ -122,44 +122,56 @@ var softwareData = [
     ]
   },
 
-  {id:44, name:'IntelliJ IDEA 2024', category:'编程开发', platform:'cross', icon:'fa-brain',
+  {id:44, name:'IntelliJ IDEA 2025', category:'编程开发', platform:'cross', icon:'fa-brain',
     description:'Java 开发IDE',
     detailDesc:'IntelliJ IDEA 是 JetBrains 开发的 Java/Kotlin 开发 IDE，以智能代码补全和强大的重构功能著称。',
     versions:[
-      {ver:'2024.2',
+      {ver:'2025.1（win）',
         links:[
-          {url:'', label:'夸克网盘'}
+          {url:'https://pan.xunlei.com/s/VP0q4QBztbi2WvGpoB_NCSimA1?pwd=divd', label:'迅雷下载'}
         ]
       },
-      {ver:'2024.1',
+	  {ver:'2025.1(macOS Apple Silicon)',
         links:[
-          {url:'', label:'夸克网盘'}
+          {url:'https://pan.xunlei.com/s/VP0q3WFbtFtkebQGFT804GcjA1?pwd=jfua', label:'迅雷下载'}
+        ]
+      },
+      {ver:'2025.1(macOS)',
+        links:[
+          {url:'https://pan.xunlei.com/s/VP0q4BgJ0K2igf0cvE2WmvebA1?pwd=ichz', label:'迅雷下载'}
         ]
       }
     ]
   },
 
-  {id:45, name:'Git 2.45', category:'编程开发', platform:'cross', icon:'fa-branch',
+  {id:45, name:'Git 2.55', category:'编程开发', platform:'cross', icon:'fa-branch',
     description:'版本控制工具',
     detailDesc:'Git 是目前最流行的分布式版本控制系统，几乎所有的软件开发项目都在使用 Git 进行代码管理。',
     versions:[
-      {ver:'2.45.2',
+      {ver:'2.55',
         links:[
-          {url:'', label:'夸克网盘'},
-          {url:'', label:'官方下载'}
-        ]
-      },
-      {ver:'2.43.0',
-        links:[
-          {url:'', label:'夸克网盘'}
+          {url:'https://pan.quark.cn/s/527bf05dab3e?pwd=sDsn', label:'夸克网盘'},
+          {url:'https://pan.xunlei.com/s/VP0pxU0rwU8unbBSXABrr3V4A1?pwd=6bx7', label:'迅雷下载'}
         ]
       }
     ]
   },
   
-  {id:69, name:'C/C++', category:'编程开发', platform:'cross', icon:'fa-branch',
-    description:'编程语言',
-    detailDesc:'C++是一种高效、灵活的通用编程语言，支持面向对象和泛型编程，广泛用于系统开发、游戏引擎和高效性能领域。',
+  {id:70,name: 'MinGW-w64',category: '编程开发',platform: 'cross',icon: 'fa-branch',
+    description: 'Windows原生C/C++编译工具链，支持64位应用开发。',
+    detailDesc: 'MinGW-w64 是一款在Windows平台上原生支持GCC编译器的开发工具集，提供完整的运行时环境和头文件库，支持生成32位和64位Windows可执行程序，是跨平台C/C++开发的重要基础组件。',
+    versions:[
+      {ver:'MinGW-W64',
+        links:[
+          {url:'https://pan.quark.cn/s/4e9bbb76f8e4?pwd=ZMEk', label:'夸克网盘'},
+        ]
+      }
+    ]
+  },
+  
+  {id:69, name: 'DEV C++',category: '编程开发',platform: 'cross',icon: 'fa-branch',
+  description: '轻量级C/C++集成开发环境，适合初学者学习编程。',
+  detailDesc: 'DEV C++ 是一款免费、开源的C/C++集成开发环境（IDE），基于MinGW编译器。它体积小巧、界面简洁，内置代码编辑、编译调试和项目管理功能，非常适合编程入门学习和中小型项目开发。',
     versions:[
       {ver:'DEV C++',
         links:[
@@ -168,7 +180,6 @@ var softwareData = [
       }
     ]
   },
-
 
   // ---- 数据分析 ----
   {id:23, name:'MySQL和管理工具', category:'数据分析', platform:'cross', icon:'fa-code',
