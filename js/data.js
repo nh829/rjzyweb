@@ -327,7 +327,7 @@ var softwareData = [
   },
   {
     id: 22,
-    name: 'SPSS 29',
+    name: 'SPSS 27',
     category: '数据分析',
     platform: 'cross',
     icon: 'fa-chart-simple',
@@ -335,10 +335,9 @@ var softwareData = [
     detailDesc: 'SPSS 是 IBM 开发的统计分析软件，广泛应用于社会科学、市场调研、医疗研究等领域的统计分析工作。',
     versions: [
       {
-        ver: 'v29.0',
+        ver: 'v27.0',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
+          {url: 'https://pan.quark.cn/s/560b05db54bf?pwd=Wu22', label: '夸克网盘'}
         ]
       },
       {
@@ -351,7 +350,7 @@ var softwareData = [
   },
   {
     id: 1,
-    name: 'Adobe Photoshop 2024',
+    name: 'Adobe Photoshop',
     category: 'Adobe',
     platform: 'cross',
     icon: 'fa-paint-brush',
@@ -359,23 +358,57 @@ var softwareData = [
     detailDesc: 'Photoshop 是 Adobe 旗下最著名的图像处理软件，广泛应用于平面设计、摄影修图、UI/UX 设计、数字绘画等领域。2024 版本带来了 AI 智能填充、神经网络滤镜等革命性功能。',
     versions: [
       {
-        ver: '2024 v25.9.1',
+        ver: '2025',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
+          {url: 'https://pan.quark.cn/s/5f2f785ad5e9?pwd=Qmrr', label: '夸克网盘'}
         ]
       },
       {
-        ver: '2023 v24.7.2',
+        ver: '2024',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
+          {url: 'https://pan.quark.cn/s/cc3e866bd798?pwd=JhXw', label: '夸克网盘'}
         ]
       },
       {
-        ver: '2022 v23.6',
+        ver: '2023',
         links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/794f52c13937?pwd=CYbC', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2022',
+        links: [
+          {url: 'https://pan.quark.cn/s/d0df410e4deb?pwd=48kY', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2021',
+        links: [
+          {url: 'https://pan.quark.cn/s/70463e3acd88?pwd=zhE2', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2020',
+        links: [
+          {url: 'https://pan.quark.cn/s/b8f9047f95d5?pwd=TUcM', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2019',
+        links: [
+          {url: 'https://pan.quark.cn/s/6945f4526b1b?pwd=QRFv', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2018',
+        links: [
+          {url: 'https://pan.quark.cn/s/2dce90773afb?pwd=nEWL', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2017',
+        links: [
+          {url: 'https://pan.quark.cn/s/9443fc1fc125?pwd=CTpp', label: '夸克网盘'}
         ]
       }
     ]
