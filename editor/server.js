@@ -10,7 +10,7 @@ const vm = require("vm");
 const ROOT = path.join(__dirname, "..");          // 项目根目录
 const EDITOR_DIR = __dirname;
 const BACKUP_DIR = path.join(EDITOR_DIR, ".backups");
-const PORT = 8125;
+const PORT = 8600;
 
 const DATA_FILE = path.join(ROOT, "js", "data.js");
 const TUT_FILE = path.join(ROOT, "js", "tutorials-data.js");
@@ -384,8 +384,16 @@ const server = http.createServer(function (req, res) {
 
 server.on("error", function (e) {
   if (e.code === "EADDRINUSE") {
-    console.error("[ERROR] Port " + PORT + " already in use.");
+    console.error("[ERROR] Port " + PORT + " is already in use.");
     console.error("Maybe the editor is already running. Close its window and retry.");
+    process.exit(1);
+  }
+  if (e.code === "EACCES") {
+    console.error("[ERROR] Cannot bind port " + PORT + " (permission denied).");
+    console.error("On Windows this usually means the port is reserved by the system");
+    console.error("(Hyper-V/WSL excluded port ranges) or blocked by another rule.");
+    console.error("Please tell your assistant the message above - the fix is to");
+    console.error("change the PORT number in editor/server.js to a free port.");
     process.exit(1);
   }
   throw e;
