@@ -726,22 +726,9 @@ var softwareData = [
     detailDesc: 'Microsoft Office 包含 Word、Excel、PowerPoint、Outlook、Access 等核心办公应用，是最主流的办公软件套件。',
     versions: [
       {
-        ver: '2024 专业增强版',
-        links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
-        ]
-      },
-      {
         ver: '2021 专业增强版',
         links: [
           {url: 'https://pan.xunlei.com/s/VP0aY3haSfyPOYNtZv4c2ntLA1?pwd=mri7', label: '迅雷下载'}
-        ]
-      },
-      {
-        ver: '2019 专业增强版',
-        links: [
-          {url: '', label: '夸克网盘'}
         ]
       }
     ]
@@ -758,7 +745,6 @@ var softwareData = [
       {
         ver: '2025 专业版',
         links: [
-          {url: '', label: '夸克网盘'},
           {url: 'https://pan.xunlei.com/s/VP0VoH6Mb4m7gVf5IXsiaf7zA1?pwd=vfym', label: '迅雷下载'}
         ]
       }
@@ -861,30 +847,17 @@ var softwareData = [
   },
   {
     id: 24,
-    name: 'Revit 2025',
+    name: 'Revit',
     category: '建筑设计',
     platform: 'win',
     icon: 'fa-building',
     description: 'BIM 建筑设计',
-    detailDesc: 'Revit 是 Autodesk 旗下的 BIM（建筑信息建模）软件，专为建筑结构设计、MEP 工程和施工提供全生命周期支持。',
+    detailDesc: 'Revit  是 Autodesk 专为建筑信息模型 (BIM) 构建的设计工具，单一应用程序集成建筑、结构、机电三大专业功能',
     versions: [
       {
-        ver: '2025',
+        ver: '2018',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
-        ]
-      },
-      {
-        ver: '2024.2',
-        links: [
-          {url: '', label: '夸克网盘'}
-        ]
-      },
-      {
-        ver: '2023.3',
-        links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/88dec53a4279?pwd=4T23', label: '夸克网盘'}
         ]
       }
     ]
@@ -1316,7 +1289,7 @@ var softwareData = [
   },
   {
     id: 46,
-    name: '7-Zip 24.08',
+    name: '7-Zip',
     category: '装机必备',
     platform: 'win',
     icon: 'fa-file-archive',
@@ -1324,16 +1297,15 @@ var softwareData = [
     detailDesc: '7-Zip 是免费开源的压缩解压软件，支持 7z、ZIP、RAR 等多种格式，压缩率高且无广告。',
     versions: [
       {
-        ver: '24.08',
+        ver: '22.01',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '官方下载'}
+          {url: 'https://pan.quark.cn/s/f59f6bd0c280?pwd=ETjG', label: '夸克网盘'}
         ]
       },
       {
-        ver: '23.01',
+        ver: '21.05',
         links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/3f721fcf489e?pwd=FwzE', label: '夸克网盘'}
         ]
       }
     ]
@@ -1387,7 +1359,7 @@ var softwareData = [
   },
   {
     id: 49,
-    name: 'Chrome 126',
+    name: 'Chrome',
     category: '装机必备',
     platform: 'cross',
     icon: 'fa-globe',
@@ -1395,23 +1367,16 @@ var softwareData = [
     detailDesc: 'Google Chrome 是目前全球最流行的网页浏览器，以快速、安全、扩展丰富著称。',
     versions: [
       {
-        ver: '126.0',
+        ver: 'chorme',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '官方下载'}
-        ]
-      },
-      {
-        ver: '125.0',
-        links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/5fec92c8f588?pwd=LvuF', label: '夸克网盘'}
         ]
       }
     ]
   },
   {
     id: 50,
-    name: 'Notepad++ 8.7',
+    name: 'Notepad++ ',
     category: '装机必备',
     platform: 'win',
     icon: 'fa-edit',
@@ -1419,15 +1384,112 @@ var softwareData = [
     detailDesc: 'Notepad++ 是 Windows 上最受欢迎的代码和文本编辑器，支持语法高亮、多标签、插件扩展等。',
     versions: [
       {
-        ver: '8.7.1',
+        ver: '8.6.4',
         links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/8e4b0312501c?pwd=xHC5', label: '夸克网盘'}
+        ]
+      }
+    ]
+  },
+  {
+    id: 72,
+    name: 'R',
+    category: '数据分析',
+    platform: 'cross',
+    icon: 'fa-chart-bar',
+    description: '开源统计计算与数据分析编程语言',
+    detailDesc: 'R 是一种专为统计计算和数据分析设计的开源编程语言，提供强大的数据处理、统计建模和可视化功能，广泛应用于学术研究、金融分析和数据科学领域，拥有丰富的扩展包生态（CRAN）。',
+    versions: [
+      {
+        ver: 'R-4.5.1-win',
+        links: [
+          {url: 'https://pan.quark.cn/s/0a2c91d2944b?pwd=PrT6', label: '夸克网盘'}
         ]
       },
       {
-        ver: '8.6.9',
+        ver: 'R for MacOS',
         links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/f77525b04a64?pwd=SSDJ', label: '夸克网盘'}
+        ]
+      }
+    ]
+  },
+  {
+    id: 73,
+    name: 'RStudio',
+    category: '数据分析',
+    platform: 'cross',
+    icon: 'fa-terminal',
+    description: '专业的R语言集成开发环境。',
+    detailDesc: 'RStudio 是专为R语言打造的免费开源集成开发环境（IDE），集代码编辑、数据查看、图表绘制和包管理于一体，界面友好、功能强大，大幅提升R语言的数据分析和可视化开发效率。',
+    versions: [
+      {
+        ver: 'RStudio for win',
+        links: [
+          {url: 'https://pan.quark.cn/s/236dc890e0f1?pwd=c129', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: 'RStudio for MacOS',
+        links: [
+          {url: 'https://pan.quark.cn/s/c8051810b453?pwd=TK8x', label: '夸克网盘'}
+        ]
+      }
+    ]
+  },
+  {
+    id: 74,
+    name: 'Stata',
+    category: '数据分析',
+    platform: 'cross',
+    icon: 'fa-chart-bar',
+    description: '专业的统计分析与数据管理软件',
+    detailDesc: 'stata 是集数据管理、统计分析和可视化于一体的专业软件，广泛应用于学术研究和商业分析。',
+    versions: [
+      {
+        ver: 'Stata18 -win',
+        links: [
+          {url: 'https://pan.quark.cn/s/1cf87a7cf68a?pwd=wnFt', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: 'Stata -macos',
+        links: [
+          {url: 'https://pan.quark.cn/s/e007316d0860?pwd=UCzh', label: '夸克网盘'}
+        ]
+      }
+    ]
+  },
+  {
+    id: 75,
+    name: 'Multisim',
+    category: '电子电路',
+    platform: 'cross',
+    icon: 'fa-microchip',
+    description: '行业标准的SPICE电路仿真与设计软件。',
+    detailDesc: '电子电路仿真设计软件，集原理图捕获、SPICE仿真和虚拟仪器于一体。内置超过55,000个经制造商验证的元件模型，支持模拟、数字及电力电子电路的交互式仿真与分析，广泛应用于高校电类教学和工程设计领域',
+    versions: [
+      {
+        ver: '14.3',
+        links: [
+          {url: 'https://pan.quark.cn/s/c6a543e0563d?pwd=XTEW', label: '夸克网盘'}
+        ]
+      }
+    ]
+  },
+  {
+    id: 76,
+    name: 'MathType',
+    category: '办公软件',
+    platform: 'cross',
+    icon: 'fa-file-word',
+    description: '专业的可视化数学公式编辑器。',
+    detailDesc: '提供超过 500 个数学符号和模板，可零误差书写各类复杂公式，并自动优化排版。完美兼容 Microsoft Office、WPS 等 800 余种应用，支持 LaTeX 与 MathML 格式互转，广泛应用于学术论文、教育教学和科研报告写作。',
+    versions: [
+      {
+        ver: '7.7.1',
+        links: [
+          {url: 'https://pan.quark.cn/s/25fc77c3888c?pwd=rDmV', label: ''}
         ]
       }
     ]
