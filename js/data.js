@@ -751,30 +751,6 @@ var softwareData = [
     ]
   },
   {
-    id: 16,
-    name: 'LibreOffice 24.8',
-    category: '办公软件',
-    platform: 'cross',
-    icon: 'fa-file-alt',
-    description: '开源办公套件',
-    detailDesc: 'LibreOffice 是免费开源的办公软件套件，包含 Writer、Calc、Impress 等组件，完全兼容 Office 格式。',
-    versions: [
-      {
-        ver: '24.8',
-        links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '官方下载'}
-        ]
-      },
-      {
-        ver: '24.2',
-        links: [
-          {url: '', label: '夸克网盘'}
-        ]
-      }
-    ]
-  },
-  {
     id: 17,
     name: 'MATLAB R2024b',
     category: '工业工程',
