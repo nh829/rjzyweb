@@ -17,6 +17,10 @@
 │   └── tutorials.js        # 教程库逻辑（列表渲染 / 详情渲染，无需改）
 ├── vendor/
 │   └── font-awesome/       # 自托管的 Font Awesome 6.5.0（离线可用）
+├── editor/                 # 【本地工具】可视化数据编辑器（不参与网站运行，可不上线）
+├── push-data.bat           # 【本地工具】双击 = 校验语法并推送数据上线
+├── 数据编辑器.bat           # 【本地工具】双击 = 启动可视化数据编辑器
+├── a04ca71dde62d33bfbcf725d591b7ad8.txt   # 【勿动】微信平台域名归属校验文件，必须放在根目录且保持原文件名与内容
 ├── favicon.svg
 ├── .gitignore
 ├── LICENSE
