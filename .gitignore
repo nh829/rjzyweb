@@ -15,5 +15,10 @@ _inject.py
 _fix.py
 _t.py
 
+# 本地工具与文档（仅本机使用，不公开到仓库）
+editor/
+数据编辑器.bat
+docs/
+
 # 数据编辑器自动备份（不入库）
 editor/.backups/
