@@ -469,7 +469,7 @@ var softwareData = [
   },
   {
     id: 4,
-    name: 'Adobe After Effects 2024',
+    name: 'Adobe After Effects 2023',
     category: 'Adobe',
     platform: 'cross',
     icon: 'fa-film',
@@ -477,16 +477,10 @@ var softwareData = [
     detailDesc: 'After Effects 是行业标准的动态图形和视觉特效软件，用于影视后期合成、MG 动画、特效制作、动态图形设计等创意工作。',
     versions: [
       {
-        ver: '2024 v24.6',
+        ver: '2023',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
-        ]
-      },
-      {
-        ver: '2023 v23.4',
-        links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/1e7e10619add?pwd=gTji', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42ZjNUuFl_80nT5rSYWP7nA1?pwd=ah76', label: '迅雷下载'}
         ]
       }
     ]
@@ -1466,6 +1460,24 @@ var softwareData = [
         ver: '7.7.1',
         links: [
           {url: 'https://pan.quark.cn/s/25fc77c3888c?pwd=rDmV', label: ''}
+        ]
+      }
+    ]
+  },
+  {
+    id: 77,
+    name: 'Audition',
+    category: 'Adobe',
+    platform: 'cross',
+    icon: 'fa-paint-brush',
+    description: 'Audition 是 Adobe 旗下的专业音频工作站软件',
+    detailDesc: 'Audition是 Adobe 旗下的专业音频工作站软件，主要用于音频的录制、编辑、混音、降噪和母带处理。',
+    versions: [
+      {
+        ver: 'Audition2022',
+        links: [
+          {url: 'https://pan.quark.cn/s/99db80aa205b?pwd=fbNz', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42aQU_nEOm4JyQorHsICYMA1?pwd=e3wa', label: '迅雷网盘'}
         ]
       }
     ]
