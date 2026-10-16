@@ -439,7 +439,7 @@ var softwareData = [
   },
   {
     id: 3,
-    name: 'Adobe Premiere Pro 2024',
+    name: 'Adobe Premiere',
     category: 'Adobe',
     platform: 'cross',
     icon: 'fa-video',
@@ -447,22 +447,10 @@ var softwareData = [
     detailDesc: 'Premiere Pro 是 Adobe 旗下的专业非线性视频编辑软件，广泛应用于影视剪辑、短视频制作、广告制作等领域，支持几乎所有的视频格式。',
     versions: [
       {
-        ver: '2024 v24.6.1',
+        ver: '2020',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
-        ]
-      },
-      {
-        ver: '2023 v23.5',
-        links: [
-          {url: '', label: '夸克网盘'}
-        ]
-      },
-      {
-        ver: '2022 v22.9',
-        links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/8c8eaf4b156f?pwd=fEUY', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42dFFWcZuIo3LoeMMlLonNA1?pwd=x46e', label: '迅雷下载'}
         ]
       }
     ]
