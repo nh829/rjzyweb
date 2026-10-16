@@ -415,7 +415,7 @@ var softwareData = [
   },
   {
     id: 2,
-    name: 'Adobe Illustrator 2024',
+    name: 'Adobe Illustrator ',
     category: 'Adobe',
     platform: 'cross',
     icon: 'fa-vector-square',
@@ -457,7 +457,7 @@ var softwareData = [
   },
   {
     id: 4,
-    name: 'Adobe After Effects 2023',
+    name: 'Adobe After Effects ',
     category: 'Adobe',
     platform: 'cross',
     icon: 'fa-film',
@@ -475,7 +475,7 @@ var softwareData = [
   },
   {
     id: 5,
-    name: 'Adobe Lightroom 2024',
+    name: 'Adobe Lightroom',
     category: 'Adobe',
     platform: 'cross',
     icon: 'fa-camera',
