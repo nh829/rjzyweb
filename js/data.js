@@ -423,16 +423,50 @@ var softwareData = [
     detailDesc: 'Illustrator 是行业标准的矢量图形设计软件，用于创建徽标、图标、插图、排版和复杂的图形设计。2024 版本增强了对 3D 效果和协作流程的支持。',
     versions: [
       {
-        ver: '2024 v28.5',
+        ver: '2025',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
+          {url: 'https://pan.quark.cn/s/573f3b4e7ac8?pwd=b8A1', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42obC-LNn8WNe-NSt7hOwzA1?pwd=bbdz', label: '迅雷下载'}
         ]
       },
       {
-        ver: '2023 v27.8',
+        ver: '2024',
         links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/37c92988099e?pwd=dpXc', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42om05nEOm4JyQorHsWYK_A1?pwd=jbhp', label: '迅雷下载'}
+        ]
+      },
+      {
+        ver: '2023',
+        links: [
+          {url: 'https://pan.quark.cn/s/de6b5a3b3e89?pwd=JqCE', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42ofbwt_OqkBIvA7O7_d4zA1?pwd=59e7', label: '迅雷下载'}
+        ]
+      },
+      {
+        ver: '2022',
+        links: [
+          {url: 'https://pan.quark.cn/s/98968e221eb9?pwd=z1tt', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '2021',
+        links: [
+          {url: 'https://pan.xunlei.com/s/VP42oynXcZuIo3LoeMMlX0vgA1?pwd=ccqz', label: '迅雷下载'}
+        ]
+      },
+      {
+        ver: '2020',
+        links: [
+          {url: 'https://pan.quark.cn/s/d456f60f361b?pwd=x8DC', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42opatD1FoizPfcoF4J69pA1?pwd=3ki3', label: '迅雷下载'}
+        ]
+      },
+      {
+        ver: '2019',
+        links: [
+          {url: 'https://pan.quark.cn/s/95517e3eafe7?pwd=WLk3', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP42oilJiCLwA7fq2PlefKJ1A1?pwd=t2xz', label: '迅雷下载'}
         ]
       }
     ]
