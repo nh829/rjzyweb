@@ -768,7 +768,7 @@ var softwareData = [
   },
   {
     id: 17,
-    name: 'MATLAB R2024b',
+    name: 'MATLAB',
     category: '工业工程',
     platform: 'cross',
     icon: 'fa-cogs',
@@ -776,22 +776,16 @@ var softwareData = [
     detailDesc: 'MATLAB 是 MathWorks 开发的高性能数值计算和可视化软件，广泛应用于数据分析、算法开发、信号处理和控制系统设计。',
     versions: [
       {
-        ver: 'R2024b',
+        ver: 'R2024b for Windows',
         links: [
-          {url: '', label: '夸克网盘'},
-          {url: '', label: '迅雷下载'}
+          {url: 'https://pan.quark.cn/s/6eb1e31b5c1a?pwd=JDw4', label: '夸克网盘'},
+          {url: 'https://pan.xunlei.com/s/VP4LyUvHq4Fz4peOFqWy8FGFA1?pwd=2a9s', label: '迅雷下载'}
         ]
       },
       {
-        ver: 'R2024a',
+        ver: 'R2025b for Mac OS ARM',
         links: [
-          {url: '', label: '夸克网盘'}
-        ]
-      },
-      {
-        ver: 'R2023b',
-        links: [
-          {url: '', label: '夸克网盘'}
+          {url: 'https://pan.quark.cn/s/7ecaaef42b4d?pwd=6AvR', label: '夸克网盘'}
         ]
       }
     ]
