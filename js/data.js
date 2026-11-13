@@ -1497,5 +1497,28 @@ var softwareData = [
         ]
       }
     ]
+  },
+  {
+    id: 78,
+    name: 'Anaconda',
+    category: '编程开发',
+    platform: 'cross',
+    icon: 'fa-terminal',
+    description: 'Python 工具箱',
+    detailDesc: '集成大量python数据开发包，多环境管理',
+    versions: [
+      {
+        ver: '25.6.1 （Windows）',
+        links: [
+          {url: 'https://pan.quark.cn/s/47c25585f759?pwd=kkR8', label: '夸克网盘'}
+        ]
+      },
+      {
+        ver: '25.6.1 (Mac OS)',
+        links: [
+          {url: 'https://pan.quark.cn/s/4c5236443a7d?pwd=hn2f', label: '夸克网盘'}
+        ]
+      }
+    ]
   }
 ];
